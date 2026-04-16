@@ -95,7 +95,58 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
-
+  
+              SizedBox(height: 24),
+              ConstrainedBox(
+                constraints: BoxConstraints(maxWidth: 600),
+                child: Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  elevation: 4,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: double.infinity,
+                        padding: EdgeInsets.symmetric(
+                          vertical: 16,
+                          horizontal: 20,
+                        ),
+                        decoration: BoxDecoration(
+                          color: Colors.amberAccent,
+                          borderRadius: BorderRadius.vertical(
+                            top: Radius.circular(16),
+                          ),
+                        ),
+                        child: Text(
+                          'Skill',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: EdgeInsets.all(20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('HTML', style: TextStyle(fontSize: 16)),
+                            SizedBox(height: 8),
+                            Text('CSS', style: TextStyle(fontSize: 16)),
+                            SizedBox(height: 8),
+                            Text('PHP', style: TextStyle(fontSize: 16)),
+                            SizedBox(height: 8),
+                            Text('JavaScript', style: TextStyle(fontSize: 16)),
+                            Icon(Icons.shape_line_sharp)
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
